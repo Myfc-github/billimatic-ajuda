@@ -1,0 +1,19 @@
+{
+  "name": "billimatic-ajuda",
+  "version": "1.0.0",
+  "description": "**Hugo**",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myfc-github/billimatic-ajuda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myfc-github/billimatic-ajuda/issues"
+  },
+  "homepage": "https://github.com/Myfc-github/billimatic-ajuda#readme"
+}

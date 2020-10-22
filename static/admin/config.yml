@@ -4,8 +4,6 @@ backend:
  repo: Myfc-github/billimatic-ajuda # Path to your repository
  base_url: https://api.netlify.com
  publish_mode: editorial_workflow
- api_root: https://api.github.com
- auth_endpoint: auth
 
 locale: 'pt'
 local_backend: true
