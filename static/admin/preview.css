@@ -1,0 +1,19 @@
+/* preview.css */
+
+html,
+body {
+  color: #444;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  padding: 40px;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}

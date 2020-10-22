@@ -1,0 +1,32 @@
+.content a {
+  text-decoration: underline; }
+  .content a:hover {
+    color: var(--primary-color); }
+
+.back-btn::before {
+  background-color: transparent; }
+
+.main .btn-primary:hover, .main .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #ee3e0d; }
+
+.sidebar {
+  padding: 40px 20px 20px 0; }
+  .sidebar .sidelist::before {
+    content: none; }
+  .sidebar .sidelist a {
+    font-weight: bold; }
+  .sidebar .sidelist ul li::before {
+    content: ''; }
+  .sidebar .sidelist ul li ul li a {
+    font-size: 14px;
+    font-weight: 500; }
+  .sidebar .sidelist ul li ul li ul li::before {
+    top: 7px; }
+  .sidebar .sidelist ul li ul li ul li a {
+    font-size: 13px;
+    padding: 0; }
+
+.navbar-light .nav-item .nav-link {
+  color: var(--link-color); }
+  .navbar-light .nav-item .nav-link:hover {
+    color: var(--link-active-color); }

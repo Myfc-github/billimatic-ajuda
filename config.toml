@@ -1,0 +1,152 @@
+################################# Default configuration ###################
+# provide your domain here
+baseURL = "/"
+# theme
+theme = "dot"
+# site title
+title = "Ajuda Billimatic"
+# default language
+DefaultContentLanguage = "pt"
+# disable language
+disableLanguages = ["en"]
+# google analytics
+googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Default Parameters ##########################
+[params]
+# logo is for all page
+logo = "images/logo-billimatic.svg"
+# logo white is for homepage logo, you can use colorful logo too...
+logo_white = "images/logo-billimatic-white.svg"
+# when logo is empty, it will shown your site title
+
+logo_myfc = "images/logo-myfc.svg"
+bg_section_image = "images/bg-cityscape.png"
+
+#site description
+description = "Encontre dicas e respostas rapidamente através da nossa documentação."
+#site keywords
+keywords = "faturamento, assistente virtual"
+#site default thumbnail
+thumbnail = "images/thumbnail-default.jpg"
+
+# customize color
+primary_color = "#F9E6C9"
+secondary_color = "#F0D8BA"
+body_color = "#f9f9f9"
+text_color = "#925F30"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+btn_color = "#f4623a"
+
+link_color = "#212529"
+link_active_color = "#f4623a"
+
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
+font_heading = "raleway"
+
+# contact form action
+contact_form_action = "/obrigado" # contact form works with : https://formspree.io
+
+################################ Portuguese Language ######################
+[Languages.pt]
+languageName = "Pt"
+languageCode = "pt-br"
+weight = 1
+copyright = "© Copyright 2020 Free Communities. Todos os direitos reservados."
+
+# banner
+[Languages.pt.params.banner]
+title = "Centro de Ajuda"
+subtitle = "Encontre dicas e respostas rapidamente através da nossa documentação."
+bg_image = "images/banner.jpg"
+placeholder = "Tem uma pergunta? Apenas digite aqui ou insira termos"
+
+# call to action
+[Languages.pt.params.cta]
+enable = true
+title = "Não encontrou uma resposta para sua pergunta?"
+content = "Entre em contato através do nosso formulário."
+# call to action button
+[Languages.pt.params.cta.button]
+enable = true
+label = "Contate-nos"
+link = "contato/"
+
+
+################## portuguese navigation #################
+[[Languages.pt.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[Languages.pt.menu.main]]
+name = "Docs"
+url = "docs"
+weight = 2
+
+[[Languages.pt.menu.main]]
+name = "Faq"
+url = "faq"
+weight = 3
+
+[[Languages.pt.menu.main]]
+name = "Contato"
+url = "contato"
+weight = 4
+
+################################ English Language ######################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 2
+copyright = "Copyright © 2020 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)"
+
+# banner
+[Languages.en.params.banner]
+title = "Support Center & Knowledge base"
+subtitle = "Find advice and answers from our support team fast or get in touch"
+bg_image = "images/humphrey-muleba-unsplash.jpg"
+placeholder = "Have a question? Just ask here or enter terms"
+
+# call to action
+[Languages.en.params.cta]
+enable = true
+title = "Didn't find an answer to your question?"
+content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+# call to action button
+[Languages.en.params.cta.button]
+enable = true
+label = "contact us"
+link = "contact"
+
+
+################## english navigation #################
+[[Languages.en.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Faq"
+url = "faq"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Contact"
+url = "contact"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Docs"
+url = "docs"
+weight = 4
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
