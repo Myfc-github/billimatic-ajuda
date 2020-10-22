@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+  {{ partial "head.html" . }}
+  
+  <body>
+    <main class="main">
+  
+      {{ if .IsHome }}
+      {{ "<!-- header -->" | safeHTML }}
+      <header class="banner {{if .Site.Params.banner.bg_image}}overlay bg-cover{{else}}bg-primary{{end}}" data-background="{{ .Site.Params.banner.bg_image | absURL }}">
+        {{ partial "navigation.html" . }}
+        {{ partial "banner.html" . }}
+      </header>
+      {{ "<!-- /header -->" | safeHTML }}
+      {{ else }}
+      {{ "<!-- header -->" | safeHTML }}
+      <header class="shadow-bottom sticky-top bg-white">
+        {{ partial "navigation.html" . }}
+      </header>
+      {{ "<!-- /header -->" | safeHTML }}
+      {{ end }}
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer.html" . }}
+      
+    </main>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8036932.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>

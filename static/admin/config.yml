@@ -1,0 +1,49 @@
+backend:
+ name: git-gateway
+ branch: main
+ repo: Myfc-github/billimatic-ajuda # Path to your repository
+ base_url: https://api.netlify.com
+ publish_mode: editorial_workflow
+ api_root: https://api.github.com
+ auth_endpoint: auth
+
+locale: 'pt'
+local_backend: true
+
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - label: "Principais categorias"
+    name: "ajuda-top"
+    description: "Seção para editar apenas as categorias de top-level, que aparecem como cards na página inicial"
+    folder: "content/docs/"
+    path: "{{slug}}/_index"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Type", name: "type", widget: "hidden", default: "topdocs"}
+      - {label: "Ícone", name: "icon", widget: "string", hint: "Escrever nome do ícone Themefy, ex. 'ti-panel' (https://themify.me/themify-icons)", required: false}
+      - {label: "Descrição", name: "description", widget: "text", hint: "Aparecerá no card da página inicial", required: false}
+      - {label: "Conteúdo", name: "body", widget: "markdown", required: false}
+
+  - label: "Subitems"
+    name: "ajuda-nested"
+    description: "Seção para editar apenas sub-items, que aparecem dentro dos cards na página inicial"
+    folder: "content/docs/"
+    create: true
+    slug: "{{slug}}"
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Ordem", name: "weight", widget: "number", hint: "Numérico. Define a ordem de exibição dos subitems listados, ex: página com ordem '1' ficará acima da página de ordem '2'"}
+      - {label: "Corpo do conteúdo", name: "body", widget: "markdown", required: false}
+      - {label: "Meta Keywords", name: "keywords", widget: "string", required: false, hint: "Palavras-chave seguidas de vírgula. Ex: Faturamento, Notas fiscais, Boleto"}
+      - {label: "Meta Description", name: "description", widget: "string", required: false, hint: "Curta descrição da página para os resultados de pesquisa."}
+      - {label: "Imagem Destacada", name: "thumbnail", widget: "image", default: "/images/thumbnail-default.jpg", required: false, hint: "Imagem que aparecerá nos compartilhamentos."}
+    meta: { path: {label: 'Caminho', widget: string, index_file: '_index', hint: "ATENÇÃO: Opção para aninhar e organizar sub-items, ex: Para criar 'Configurações iniciais > Configure sua Organização > Nova Organização', é necessário preencher o caminho: 'configuracoes-iniciais/configure-sua-organizacao/nova-organizacao'" } }

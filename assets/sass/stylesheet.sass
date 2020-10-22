@@ -1,0 +1,43 @@
+// Sass Stylesheet
+
+.content a
+	text-decoration: underline
+	&:hover
+		color: var(--primary-color)
+
+.back-btn::before
+	background-color: transparent
+
+.main
+	.btn-primary
+		&:hover,
+		&:not(:disabled):not(.disabled):active
+			background-color: darken(#f4623a, 10%)
+
+.sidebar
+	padding: 40px 20px 20px 0
+	.sidelist
+		&::before
+			content: none
+		a
+			font-weight: bold
+		// Diferenciando subitems de penultimo nível
+		ul li
+			&::before
+				content: ''
+			ul li
+				a
+					font-size: 14px
+					font-weight: 500
+				// Diferenciando subitems de último nível
+				ul li
+					&::before
+						top: 7px
+					a
+						font-size: 13px
+						padding: 0
+
+.navbar-light .nav-item .nav-link
+	color: var(--link-color)
+	&:hover
+		color: var(--link-active-color)

@@ -1,0 +1,104 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  {{ "<!-- Metadata --> " | safeHTML }}
+  <title  itemprop="name">{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta property="og:title"     content="{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+  <meta name="twitter:title"    content="{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+  <meta itemprop="name"         content="{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+  <meta name="application-name" content="{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+  <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+  {{if .IsHome}}
+  <meta name="keywords" content="{{ $.Site.Params.keywords }}" />
+  {{else}}
+  {{ with .Keywords }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }} {{ end }}{{ $e }}{{ end }}">{{ end }}
+  {{end}}
+
+  <meta name="description"         content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  <meta itemprop="description"     content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  <meta property="og:description"  content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  <meta name="twitter:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+
+  <base href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+  <meta name="url" content="{{ .Permalink }}" />
+  <meta name="twitter:url" content="{{ .Permalink }}" /> 
+  <meta property="og:url" content="{{ .Permalink }}" />
+
+  {{ "<!-- Thumbnail --> " | safeHTML }}
+{{ with .Params.thumbnail }} 
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" /> 
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" /> 
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.thumbnail | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.thumbnail | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.thumbnail | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.thumbnail | absURL }}" /> 
+{{ end }}
+
+  <meta name="robots" content="index,follow" /> 
+  <meta name="googlebot" content="index,follow" />
+
+  {{ hugo.Generator }}
+  
+  {{ "<!-- ** CSS Plugins Needed for the Project ** -->" | safeHTML }}
+  
+  {{ "<!-- Bootstrap -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ `plugins/bootstrap/bootstrap.min.css` | absURL }}">
+
+  {{ "<!-- themefy-icon -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ `plugins/themify-icons/themify-icons.css` | absURL }}">
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+
+  {{ "<!-- fonts -->" | safeHTML }}
+  <link href="https://fonts.googleapis.com/css?family={{replace .Site.Params.font_family ' ' '+' | title}}:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family={{replace .Site.Params.font_heading ' ' '+' | title}}:300,400,700&display=swap" rel="stylesheet">
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+  <style>
+  :root{
+    --primary-color:{{ .Site.Params.primary_color }};
+    --secondary-color:{{ .Site.Params.secondary_color }};
+    --body-color:{{ .Site.Params.body_color }};
+    --text-color:{{ .Site.Params.text_color }};
+    --white-color:{{ .Site.Params.white_color }};
+    --light-color:{{ .Site.Params.light_color }};
+    --font-family:{{ replace .Site.Params.font_family ' ' '+' | title }};
+    --font-heading:{{ replace .Site.Params.font_heading ' ' '+' | title }};
+    --btn-color:{{ .Site.Params.btn_color }};
+    --link-color:{{ .Site.Params.link_color }};
+    --link-active-color:{{ .Site.Params.link_active_color }};
+  }
+  </style>
+
+{{ "<!-- Main Stylesheet -->" | safeHTML }}
+{{ $css := resources.Get "css/style.css" | minify }}
+<link href="{{ $css.Permalink }}" rel="stylesheet" media="screen"/>
+
+{{ "<!-- Sass Stylesheet -->" | safeHTML }}
+{{ $css := resources.Get "css/stylesheet.css" | minify }}
+<link href="{{ $css.Permalink }}" rel="stylesheet" media="screen"/>
+  
+{{ "<!-- ** JS Plugins Needed for the Project ** -->" | safeHTML }}
+
+{{ "<!-- jquiry -->" | safeHTML }}
+<script src="{{ `plugins/jquery/jquery-1.12.4.js` | absURL }}"></script>
+
+{{ "<!-- jquary ui -->" | safeHTML }}
+<script src="{{ `plugins/jquery/jquery-ui.js`| absURL }}"></script>
+
+{{ "<!-- Bootstrap JS -->" | safeHTML }}
+<script src="{{ `plugins/bootstrap/bootstrap.min.js` | absURL }}"></script>
+
+{{ "<!-- match-height JS -->" | safeHTML }}
+<script src="{{ `plugins/match-height/jquery.matchHeight-min.js` | absURL }}"></script>
+
+{{ template "_internal/google_analytics.html" . }}
+
+</head>
