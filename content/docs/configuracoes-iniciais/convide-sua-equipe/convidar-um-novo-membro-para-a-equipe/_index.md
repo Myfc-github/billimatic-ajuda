@@ -3,9 +3,17 @@ title: Convidar um novo membro para a equipe
 layout: blog
 weight: 1
 ---
-Para que um usuário consiga acessar a sua conta, é necessário convidá-lo para o Billimatic.
+<!--StartFragment-->
 
-Acesse o menu “&#60;Seu nome&#62; / Contas”.
+Para um usuário entrar no Billimatic, você deverá enviar um convite pra ele por e-mail. 
+
+
+
+Acesse o menu “<Seu nome> / Contas”.
+
+
+
+<!--EndFragment-->
 
 ![Menu do perfil, seta destacando "Contas"](/images/uploads/convidar-um-novo-membro-para-a-equipe-1.png "Convidar um novo membro para a equipe - 1")
 
@@ -17,4 +25,8 @@ Convide o novo membro da equipe, informando seu e-mail.
 
 ![Configurações da conta de Myfreecomm, no tópico de Usuários. Preencha as informações e clique em "Convidar Usuário", informe o Email e clique em "OK"](/images/uploads/convidar-um-novo-membro-para-a-equipe-3.png "Convidar um novo membro para a equipe - 3")
 
+<!--StartFragment-->
+
 O Billimatic envia um e-mail para o usuário convidado. Ele deve confirmar o convite, e conseguirá acessar o sistema.
+
+<!--EndFragment-->
