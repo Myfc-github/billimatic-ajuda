@@ -7,7 +7,7 @@ weight: 5
 
 Se você tem muitos clientes, você pode querer cadastrá-los todos de uma vez através de um arquivo xml. É bem mais rápido que preencher um a um.
 
-Para isso, acesse o menu “Cadastros / Clientes / Pessoa Jurídica” e clique em “Importar Empresas via Excel”.
+Para isso, acesse o menu “Cadastros / Clientes / Pessoa Jurídica” e clique em “Importação de Empresas via Excel”.
 
 Nós já disponibilizamos uma planilha modelo que deve ser utilizada para evitar erros na importação. Para baixar, é só clicar no link.
 
