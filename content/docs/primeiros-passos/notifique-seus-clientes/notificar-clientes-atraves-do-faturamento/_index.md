@@ -7,6 +7,6 @@ Acesse o faturamento que deseja emitir o boleto, clique em “Ações do faturam
 
 ![Em "Ações do faturamento", a terceira opção ("Notificar Faturamento") está destacada por uma seta.](/images/uploads/notificar-clientes-através-do-faturamento-1.png "Notificar clientes através do faturamento - 1")
 
-Confirme os dados do e-mail e clique em “Enviar e-mail”.
+Confirme os dados do e-mail, anexos e clique em “Enviar e-mail”.
 
 ![Exemplo de formulário para envio de e-mail.](/images/uploads/notificar-clientes-através-do-faturamento-2.png "Notificar clientes através do faturamento - 2")
