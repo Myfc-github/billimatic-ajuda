@@ -7,7 +7,7 @@ weight: 2
 
 Caso você tenha muitos contratos, você pode importar uma planilha Excel e cadastrá-los todos de uma só vez. Veja só como é fácil.
 
-Acesse o menu “Contratos” e clique em “Importar Contratos via Excel”.
+Acesse o menu “Contratos” e clique em “Importação de Contratos via Excel”.
 
 Nós já disponibilizamos uma planilha modelo que deve ser utilizada para evitar erros na importação. Para baixar, é só clicar no link.
 
