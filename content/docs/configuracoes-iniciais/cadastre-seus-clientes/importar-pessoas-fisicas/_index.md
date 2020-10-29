@@ -5,13 +5,9 @@ weight: 6
 ---
 <!--StartFragment-->
 
-Para importar pessoas físicas, acesse o menu “Cadastros / Clientes / Pessoa Física” e clique em “Importar Clientes PF via Excel”.
-
-
+Para importar pessoas físicas, acesse o menu “Cadastros / Clientes / Pessoa Física” e clique em “Importação de Pessoas via Excel”.
 
 Nós já disponibilizamos uma planilha modelo que deve ser utilizada para evitar erros na importação. Para baixar, é só clicar no link.
-
-
 
 <!--EndFragment-->
 
@@ -21,19 +17,11 @@ Nós já disponibilizamos uma planilha modelo que deve ser utilizada para evitar
 
 A primeira linha da planilha contém o título das colunas e não pode ser deletada, é através dela que o sistema faz as correspondências para preencher os dados.
 
-
-
 A  segunda linha da planilha traz um exemplo de cliente fictício. Substitua com os dados de seus clientes, criando uma nova linha para cada novo cliente.
-
-
 
 Ao finalizar, salve. 
 
-
-
 Dica de organização: você pode querer nomear o arquivo no seu computador de forma a conseguir sempre identificar o mais atual.
-
-
 
 <!--EndFragment-->
 
@@ -41,9 +29,7 @@ Dica de organização: você pode querer nomear o arquivo no seu computador de f
 
 <!--StartFragment-->
 
-De volta ao Billimatic, selecione o arquivo e clique em “Importar Clientes PF”.
-
-
+De volta ao Billimatic, selecione o arquivo e clique em “Importar Pessoas”.
 
 <!--EndFragment-->
 
