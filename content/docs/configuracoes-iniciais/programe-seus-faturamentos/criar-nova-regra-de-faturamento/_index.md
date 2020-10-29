@@ -75,11 +75,15 @@ Para este caso, devem ser informados:
 
 Caso o seu faturamento tenha mais de um serviço selecionado, é possível reajustar cada um deles individualmente, em datas e usando índices distintos. Para isso, adicione configurações para cada serviço clicando no botão “Adicionar” e selecione o serviço específico.
 
+![](/images/uploads/image35.png)
+
 Na seção “Nota Fiscal”, informe:
 
 * Modelo de NFS-e (Emites) - Selecione qual modelo de NFS-e será utilizado neste faturamento. Caso ainda não tenha definido seus modelos, consulte o tópico [Configurar notas fiscais](https://docs.google.com/document/d/1psChi3xUnRTthgMP8Ibs6UMBDaQgmrWYey5ikBIobiY/edit#heading=h.sbh8t7q6hime).
 * Escolha quando deseja emitir a NFS-e: no dia do faturamento ou dias depois do recebimento. A vantagem de atrelá-la ao recebimento é não ter emitido a nota, em caso de inadimplência e posterior perda do faturamento. Esta é uma opção para uso no faturamento automático.
 * Corpo da NFS-e - Insira aqui a descrição da nota fiscal. Note que você pode utilizar tags de substituição com os dados do faturamento. Essas tags serão substituídas pelos valores correspondentes no momento da emissão da nota. No exemplo abaixo a tag será substituída pela descrição do faturamento. A lista completa das tags disponíveis podem ser consultadas na própria tela.
+
+  ![](/images/uploads/image10.png)
 
 Na seção “Cobrança”, informe:
 
@@ -87,8 +91,12 @@ Na seção “Cobrança”, informe:
 * Configuração de Cobrança (Cobrato) - Escolha qual configuração de cobrança será utilizada neste faturamento. Caso a forma de pagamento escolhida for boleto, a configuração de cobrança irá definir o banco e a respectiva conta de cobrança. Para o caso de pagamento feito por cartão de crédito, define a conta da Cielo. 
 * Modelo de Cobrança (Cobrato) - Para o caso de boletos, define a política de multa e juros, para cálculo de boletos vencidos. 
 
+  ![](/images/uploads/image3.png)
+
 Na seção “Financeiro”, você irá incluir as informações necessárias para associar o vencimento a um recebível no Myfinance. Esta seção aparece somente para quem tem integração com o sistema Myfinance. Saiba mais em Integrações.
 
 * Categoria - O recebível associado é categorizado conforme a categoria selecionada.
 * Centro de Receita - O recebível associado é apropriado ao centro de receita selecionado.
 * Conta de Recebível - O recebível associado usa regras definidas na conta de recebível selecionada.
+
+  ![](/images/uploads/image47.png)
