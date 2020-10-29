@@ -3,7 +3,7 @@ title: Criar pessoa física
 layout: blog
 weight: 3
 ---
-Para criar um cliente pessoa física, acesse o menu “Cadastros / Clientes / Pessoa Física” e clique em “Criar Novo Cliente PF”.
+Para criar um cliente pessoa física, acesse o menu “Cadastros / Clientes / Pessoa Física” e clique em “Criar Nova Pessoa”.
 
 ![Formulário "Nova Pessoa"](/images/uploads/criar-pessoa-física-1.png "Criar pessoa física - 1")
 
