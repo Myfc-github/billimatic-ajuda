@@ -5,9 +5,7 @@ weight: 2
 ---
 <!--StartFragment-->
 
-Para criar um cliente pessoa jurídica, acesse o menu “Cadastros / Clientes / Pessoa Jurídica” e clique em “Criar Novo Cliente PJ”.
-
-
+Para criar um cliente pessoa jurídica, acesse o menu “Cadastros / Clientes / Pessoa Jurídica” e clique em “Criar Nova Empresa”.
 
 <!--EndFragment-->
 
@@ -16,8 +14,6 @@ Para criar um cliente pessoa jurídica, acesse o menu “Cadastros / Clientes / 
 <!--StartFragment-->
 
 Preencha as informações que identificam o cliente e clique em “Criar”. 
-
-
 
 É muito importante preencher corretamente o endereço do cliente, pois há acordos específicos entre prefeituras que podem alterar o valor das alíquotas cobradas.
 
