@@ -3,6 +3,6 @@ title: Integrações
 layout: blog
 type: topdocs
 icon: ti-panel
-description: Tudo está conectado
+description: Porque tudo está conectado
 weight: 10
 ---
