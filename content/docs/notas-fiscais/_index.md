@@ -4,5 +4,5 @@ layout: blog
 weight: 3
 type: topdocs
 icon: ti-panel
-description: Você em paz com o leão
+description: Emissão, envio, cancelamento e tudo pra você ficar na paz com o leão
 ---
