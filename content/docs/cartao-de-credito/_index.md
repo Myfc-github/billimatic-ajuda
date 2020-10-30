@@ -1,8 +1,8 @@
 ---
-title: Cartão de crédito
+title: Cartões de crédito
 layout: blog
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: Porque você é versátil
 weight: 5
 ---
