@@ -1,9 +1,9 @@
 ---
 title: Primeiros passos
 date: 2020-09-28T20:09:00
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: A trilha do sucesso
 weight: 2
 ---
 Com as Configurações Iniciais finalizadas, o Billimatic está pronto para começar! É possível deixar tudo rodando no automático, mas também é importante saber como tomar as ações necessárias quando for necessário. Por isso preparamos esse guia de Primeiros Passos.
