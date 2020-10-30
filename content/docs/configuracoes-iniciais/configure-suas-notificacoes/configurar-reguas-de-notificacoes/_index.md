@@ -13,7 +13,7 @@ Para criar uma régua de cobrança, acesse o menu “Cadastros / Réguas de Cobr
 
 Dê um nome facilmente reconhecível para a régua e inclua uma descrição.
 
-Na seção “Regras de Cobrança”, selecione os modelos de notificação previamente criados (para criar as notificações, consulte o tópico [Configurar Notificações](https://docs.google.com/document/d/1psChi3xUnRTthgMP8Ibs6UMBDaQgmrWYey5ikBIobiY/edit#heading=h.qfzdd6ys8bbk)) que você quer incluir na régua e determine quando a mensagem deverá ser disparada: na data do vencimento, n dias úteis antes do vencimento, ou n dias após o vencimento.
+Na seção “Regras de Cobrança”, selecione os modelos de notificação previamente criados (para criar as notificações, consulte o tópico [Configurar Notificações](configuracoes-iniciais/configure-suas-notificacoes/configurar-notificacoes)) que você quer incluir na régua e determine quando a mensagem deverá ser disparada: na data do vencimento, n dias úteis antes do vencimento, ou n dias após o vencimento.
 
 ![](/images/uploads/image4.png)
 
