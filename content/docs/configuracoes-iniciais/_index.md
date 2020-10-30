@@ -3,7 +3,7 @@ title: Configurações iniciais
 date: 2020-09-28T20:09:00
 type: topdocs
 icon: ti-panel
-description: Comece por aqui
+description: Antes de tudo, comece por aqui
 weight: 1
 ---
 <!--StartFragment-->
