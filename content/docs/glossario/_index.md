@@ -1,8 +1,8 @@
 ---
 title: Glossário
 layout: blog
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: Sim, somos nerds!
 weight: 8
 ---
