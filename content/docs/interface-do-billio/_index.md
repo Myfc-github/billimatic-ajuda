@@ -1,8 +1,8 @@
 ---
 title: Interface do Billio
 layout: blog
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: Pra que serve esse botão?!
 weight: 9
 ---
