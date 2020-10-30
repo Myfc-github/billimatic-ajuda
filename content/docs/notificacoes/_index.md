@@ -1,8 +1,8 @@
 ---
 title: Notificações
 layout: blog
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: Não se trumbique, comunique
 weight: 7
 ---
