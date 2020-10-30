@@ -3,6 +3,6 @@ title: Notificações
 layout: blog
 type: topdocs
 icon: ti-panel
-description: Não se trumbique, comunique
+description: E-mails e mensagens pra deixar todo mundo alinhadinho
 weight: 7
 ---
