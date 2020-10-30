@@ -1,8 +1,8 @@
 ---
 title: Integrações
 layout: blog
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: Tudo está conectado
 weight: 10
 ---
