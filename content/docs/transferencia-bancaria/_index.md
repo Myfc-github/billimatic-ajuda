@@ -1,8 +1,8 @@
 ---
 title: Transferência bancária
 layout: blog
-icon: ti-panel
-description: Clique para ver a documentação
 type: topdocs
+icon: ti-panel
+description: ""
 weight: 6
 ---
