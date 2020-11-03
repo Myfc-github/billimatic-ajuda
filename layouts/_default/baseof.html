@@ -24,9 +24,24 @@
       
     </main>
 
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8036932.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    <!-- Start of HelpCrunch Embed Code -->
+    <script type="text/javascript">
+    (function(w,d){
+      w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];
+      function r(){var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://widget.helpcrunch.com/%27;(d.body%7C%7Cd.head).appendChild(s);%7D
+      if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+    })(window, document)
+    </script>
+
+    <script type="text/javascript">
+      HelpCrunch('init', 'myfc', {
+        applicationId: 1,
+        applicationSecret: 'uekjZx9YQ78vlbT/C/xjQWOJY8Dos7IZ/WfMvVJHgDsggTJ/DGnFmEuZhxq4TF9QNQGAVUpolQHsOtI1WcxZ9g=='
+      })
+
+      HelpCrunch('showChatWidget');
+    </script>
+    <!-- End of HelpCrunch Embed Code -->
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
